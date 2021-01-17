@@ -2,6 +2,8 @@
 
 A simple demonstration of an API developed in PHP, and a single page application developed with React/Redux.
 
+Hosted on https://hr-demo.cloudapps.io (with a Let's Encrypt certificate)
+
 
 ## Installation
 
