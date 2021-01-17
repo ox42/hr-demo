@@ -1,0 +1,10 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Models\\": "models/",
+      "Api\\": "api/",
+      "Api\\Auth\\": "api/auth/",
+      "Api\\Staff\\": "api/staff/"
+    }
+  }
+}

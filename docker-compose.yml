@@ -1,0 +1,21 @@
+version: '2.0'
+services:
+  hr_web:
+    build: .
+    ports:
+      - "8080:80"
+    links:
+      - hr_mysql
+  hr_mysql:
+    image: mysql:8
+    volumes:
+      - hr_mysql_data:/var/lib/mysql
+      - ./backend/data/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: hr_secret
+      MYSQL_DATABASE: hr
+      MYSQL_USER: hr
+      MYSQL_PASSWORD: hr_secret
+volumes:
+  hr_mysql_data: {}

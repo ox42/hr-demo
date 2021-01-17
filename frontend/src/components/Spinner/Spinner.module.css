@@ -1,0 +1,12 @@
+.verticalCenter {
+    margin-top: 290px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.largeSpinner {
+    width: 4rem;
+    height: 4rem;
+}
